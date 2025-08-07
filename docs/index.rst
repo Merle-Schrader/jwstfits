@@ -5,15 +5,7 @@
 
 jwstfits documentation
 ======================
-
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
-
 .. jwstfits documentation master file
-
-Welcome to jwstfits!
-====================
 
 A small Python module to streamline working with JWST pipeline FITS outputs.
 It enables quick inspection, data extraction, and unit conversion without having to dig through HDUs.
@@ -48,3 +40,9 @@ API Reference
 .. autofunction:: jwstfits.utils.columns
 .. autofunction:: jwstfits.utils.tree
 .. autofunction:: jwstfits.utils.head
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   jwstfits

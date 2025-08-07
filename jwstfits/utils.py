@@ -60,8 +60,7 @@ def tree(path):
     Notes
     -----
     - Shows extension index, name, type, and the first few header keywords.
-    - If there are multiple EXTRACT1D extensions, only the first is shown
-    with a summary note of skipped ones.
+    - If there are multiple EXTRACT1D extensions, only the first is shown with a summary note of skipped ones.
     - Useful for quick exploration of file layout and header content.
     """
 
