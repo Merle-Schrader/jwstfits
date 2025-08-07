@@ -28,8 +28,20 @@ include = ["jwstfits*"]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[project.dependencies]
-numpy = ">=1.22"
-astropy = ">=5.0"
-pandas = ">=1.4"
-matplotlib = ">=3.5"
+
+dependencies = [
+    "numpy>=1.22",
+    "astropy>=5.0",
+    "pandas>=1.4",
+    "matplotlib>=3.5"
+]
+
+[project.optional-dependencies]
+docs = [
+    "sphinx",
+    "sphinx_rtd_theme"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
