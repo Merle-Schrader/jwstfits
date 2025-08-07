@@ -1,6 +1,20 @@
 from astropy.io import fits
 
 def columns(path):
+    """
+    Print FITS file structure and column definitions for the first EXTRACT1D extension.
+
+    Parameters
+    ----------
+    path : str
+        Path to the FITS file.
+
+    Notes
+    -----
+    - Mimics the behavior of `hdul.info()` but truncates duplicate EXTRACT1D entries for time-series data.
+    - Also prints the column definitions of the first EXTRACT1D extension.
+    """
+
     with fits.open(path) as hdul:
         extract1d_count = sum(1 for hdu in hdul if hdu.name.upper() == "EXTRACT1D")
         
@@ -35,6 +49,22 @@ def columns(path):
 
 
 def tree(path):
+    """
+    Display a tree-like structure of the FITS file contents.
+
+    Parameters
+    ----------
+    path : str
+        Path to the FITS file.
+
+    Notes
+    -----
+    - Shows extension index, name, type, and the first few header keywords.
+    - If there are multiple EXTRACT1D extensions, only the first is shown
+    with a summary note of skipped ones.
+    - Useful for quick exploration of file layout and header content.
+    """
+
     hdul = fits.open(path)
     print(f"\nFITS File Tree Structure for: {path}")
     
@@ -67,6 +97,22 @@ def tree(path):
     hdul.close()
 
 def head(path, n=5):
+    """
+    Print the full headers and a preview of data from a FITS file.
+
+    Parameters
+    ----------
+    path : str
+        Path to the FITS file.
+    n : int, optional
+        Number of data rows to preview from each table HDU (default is 5).
+
+    Notes
+    -----
+    - Only shows the first EXTRACT1D extension if duplicates exist.
+    - Displays full headers using `repr` to preserve formatting.
+    - If table data is present, prints a preview of the data array.
+    """
     hdul = fits.open(path)
     print(f"\nFITS File Headers for: {path}")
 
