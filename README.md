@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/_static/jwstfits1.png" alt="jwstfits logo" width="200"/>
+  <img src="docs/_static/jwstfits2.png" alt="jwstfits logo" width="200"/>
 </p>
 
 # jwstfits
@@ -41,6 +41,6 @@ pip install jwstfits
 ## Memes
 
 <p float="left">
-  <img src="/jwstfits/images/confusedfits.jpeg" height="100" />
-  <img src="/jwstfits/images/onedoesnotsimplyopenfitsfile.png" height="100" /> 
+  <img src="/jwstfits/images/confusedfits.jpeg" height="250" />
+  <img src="/jwstfits/images/onedoesnotsimplyopenfitsfile.jpeg" height="250" /> 
 </p>

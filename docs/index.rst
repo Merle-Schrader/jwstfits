@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. image:: _static/jwstfits1.png
+.. image:: _static/jwstfits2.png
    :alt: jwstfits logo
    :align: center
    :width: 200px

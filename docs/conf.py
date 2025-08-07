@@ -36,7 +36,7 @@ html_static_path = ['_static']
 
 
 # Add your logo here
-html_logo = "_static/jwstfits1.png"
+html_logo = "_static/jwstfits2.png"
 
 
 html_theme_options = {
