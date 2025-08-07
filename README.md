@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/_static/jwstfits1.png" alt="jwstfits logo" width="200"/>
+</p>
+
 # jwstfits
 
 A small utility module for quick inspection and data extraction from JWST `.fits` files. Currently supports NIRSpec `x1d` and `x1dints` outputs. MIRI LRS and MRS `s3d` and `x1d` support coming soon...
@@ -32,3 +36,11 @@ https://jwstfits.readthedocs.io
 
 ```bash
 pip install jwstfits
+```
+
+## Memes
+
+<p float="left">
+  <img src="/images/confusedfits.jpeg" height="100" />
+  <img src="/images/onedoesnotsimplyopenfitsfile.png" height="100" /> 
+</p>
