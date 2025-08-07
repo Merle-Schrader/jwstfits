@@ -42,5 +42,5 @@ pip install jwstfits
 
 <p float="left">
   <img src="/jwstfits/images/confusedfits.jpeg" height="250" />
-  <img src="/jwstfits/images/onedoesnotsimplyopenfitsfile.jpeg" height="250" /> 
+  <img src="/jwstfits/images/onedoesnotsimplyopenfitsfile.jpg" height="250" /> 
 </p>
