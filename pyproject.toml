@@ -16,10 +16,6 @@ classifiers = [
   "Topic :: Scientific/Engineering :: Astronomy"
 ]
 
-[project.urls]
-Homepage = "https://github.com/Merle-Schrader/jwstfits"
-Documentation = "https://jwstfits.readthedocs.io"
-
 dependencies = [
   "numpy>=1.22",
   "astropy>=5.0",
@@ -32,6 +28,10 @@ docs = [
   "sphinx",
   "sphinx_rtd_theme"
 ]
+
+[project.urls]
+Homepage = "https://github.com/Merle-Schrader/jwstfits"
+Documentation = "https://jwstfits.readthedocs.io"
 
 [tool.setuptools.packages.find]
 where = ["."]
