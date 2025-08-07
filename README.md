@@ -41,6 +41,6 @@ pip install jwstfits
 ## Memes
 
 <p float="left">
-  <img src="/images/confusedfits.jpeg" height="100" />
-  <img src="/images/onedoesnotsimplyopenfitsfile.png" height="100" /> 
+  <img src="/jwstfits/images/confusedfits.jpeg" height="100" />
+  <img src="/jwstfits/images/onedoesnotsimplyopenfitsfile.png" height="100" /> 
 </p>
