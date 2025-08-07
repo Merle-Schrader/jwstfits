@@ -3,45 +3,40 @@ name = "jwstfits"
 version = "0.1.0"
 description = "Inspecting and extracting data from JWST NIRSpec and MIRI FITS files"
 authors = [
-  { name="Merle Schrader", email="schradem@tcd.ie" }
+  { name = "Merle Schrader", email = "schradem@tcd.ie" }
 ]
 readme = "README.md"
 requires-python = ">=3.8"
-license = {text = "MIT"}
+license = { text = "MIT" }
 keywords = ["jwst", "fits", "astropy", "spectroscopy", "nirspec", "miri"]
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Intended Audience :: Science/Research",
-    "Topic :: Scientific/Engineering :: Astronomy"
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Astronomy"
 ]
 
 [project.urls]
 Homepage = "https://github.com/Merle-Schrader/jwstfits"
 Documentation = "https://jwstfits.readthedocs.io"
 
+dependencies = [
+  "numpy>=1.22",
+  "astropy>=5.0",
+  "pandas>=1.4",
+  "matplotlib>=3.5"
+]
+
+[project.optional-dependencies]
+docs = [
+  "sphinx",
+  "sphinx_rtd_theme"
+]
+
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["jwstfits*"]
 
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
-
-
-dependencies = [
-    "numpy>=1.22",
-    "astropy>=5.0",
-    "pandas>=1.4",
-    "matplotlib>=3.5"
-]
-
-[project.optional-dependencies]
-docs = [
-    "sphinx",
-    "sphinx_rtd_theme"
-]
-
-[build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
